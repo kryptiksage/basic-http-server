@@ -1,7 +1,7 @@
 use std::io::prelude::*;
 use std::net::{TcpStream,TcpListener};
 use std::fs;
-use http_server::ThreadPool;
+use threadpool::ThreadPool;
 
 fn main() {
     let listener = match TcpListener::bind("127.0.0.1:7878") {
